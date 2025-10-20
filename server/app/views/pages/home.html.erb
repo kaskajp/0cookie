@@ -1,0 +1,13 @@
+<h1>0cookie</h1>
+<p>Self-hosted or SaaS cookie consent & scanning.</p>
+<p>
+  <% if current_user %>
+    <%= link_to "Go to dashboard", dashboard_index_path %> ·
+    <%= link_to "Sign out", session_path, data: { turbo_method: :delete } %>
+  <% else %>
+    <%= link_to "Sign in", new_session_path %> ·
+    <%= link_to "Create account", new_registration_path %>
+  <% end %>
+</p>
+
+

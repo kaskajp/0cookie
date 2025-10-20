@@ -1,0 +1,17 @@
+<h1>Reset password</h1>
+<%= form_with url: password_path, method: :patch do %>
+  <%= hidden_field_tag :token, @token %>
+  <div>
+    <label>New password</label>
+    <%= password_field_tag "user[password]" %>
+  </div>
+  <div>
+    <label>Confirm password</label>
+    <%= password_field_tag "user[password_confirmation]" %>
+  </div>
+  <div>
+    <%= submit_tag "Update password" %>
+  </div>
+<% end %>
+
+

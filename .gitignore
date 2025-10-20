@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+
+# Editor
+.idea/
+.vscode/
+
+# Env
+.env
+.env.*
+
+# Rails app (server)
+/server/log/*
+!/server/log/.keep
+/server/tmp/*
+!/server/tmp/.keep
+/server/storage/*
+/server/.bundle/
+/server/vendor/bundle/
+/server/node_modules/
+/server/.kamal/secrets
+
+# Bundler/Gem artifacts accidentally created in project root of server/
+/server/gems/
+/server/specifications/
+/server/extensions/
+/server/cache/
+/server/build_info/
+
+/server/config/master.key
+

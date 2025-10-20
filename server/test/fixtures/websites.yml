@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  workspace: one
+  url: MyString
+  scan_schedule: MyString
+  status: MyString
+
+two:
+  workspace: two
+  url: MyString
+  scan_schedule: MyString
+  status: MyString
