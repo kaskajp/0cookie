@@ -17,3 +17,13 @@ PORT=3000 bundle exec puma
 Visit http://localhost:3000 and sign in with the seeded admin.
 
 See `server/README.md` for details.
+
+## CI & Releases
+- GitHub Actions CI runs on pushes/PRs to develop and main
+- Semantic Release publishes prereleases from develop and stable releases from main
+
+## Docker Compose
+```
+docker-compose up --build
+```
+Web at http://localhost:3000, MailHog UI at http://localhost:8025.
